@@ -1,6 +1,14 @@
 {
   "name": "file-box-cover-design",
   "version": "0.1.0",
+  "description": "for design file box cover, as a Vue component.",
+  "keywords": [
+    "vuejs",
+    "drag",
+    "draggable",
+    "archive",
+    "box"
+  ],
   "private": true,
   "repository": {
     "type": "git",
