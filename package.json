@@ -2,6 +2,10 @@
   "name": "file-box-cover-design",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newenter/file-box-cover-design.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
