@@ -6,6 +6,11 @@
     "type": "git",
     "url": "https://github.com/newenter/file-box-cover-design.git"
   },
+  "author": {
+    "name": "newenter",
+    "email": "new-enter@163.com",
+    "url": "http://zhengnl.cn"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
