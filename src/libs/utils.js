@@ -262,6 +262,23 @@ export function moveElementAwayFromCollision(layout, collidesWith, itemToMove, i
 	// with cascading moves, as an item may actually leapflog a collision and cause a reversal in order.
 	return moveElement(layout, itemToMove, undefined, itemToMove.y + 1)
 }
+/**
+ * Returns the first item this layout collides with.
+ * It doesn't appear to matter which order we approach this from, although
+ * perhaps that is the wrong thing to do.
+ *
+ * @param  {Object} layoutItem Layout item.
+ * @return {Object|undefined}  A colliding layout item, or undefined.
+ */
+export function getFirstCollision(layout, layoutItem) {
+	for (let i = 0, len = layout.length; i < len; i++) {
+		if (collides(layout[i], layoutItem)) return layout[i]
+	}
+}
+
+export function getAllCollisions(layout, layoutItem) {
+	return layout.filter((l) => collides(l, layoutItem))
+}
 
 /**
  * Helper to convert a number to a percentage string.
