@@ -152,6 +152,7 @@ export default {
 				}
 				for (let i = 0; i < contentTop; i += 1) {
 					if (i % 50 === 0 && i + 50 <= contentTop) {
+						console.log('----, %s', i)
 						this.yScale.push({ id: i })
 					}
 				}
@@ -411,7 +412,7 @@ export default {
 	width: 100%;
 	height: 3px;
 	background: url('./imgs/line_h.png') repeat-x left center;
-	cursor: n-resize; /*url(./image/cur_move_h.cur), move*/
+	cursor: n-resize; 
 }
 
 .ref_line_v {
@@ -419,14 +420,14 @@ export default {
 	height: 100%;
 	_height: 9999px;
 	background: url('./imgs/line_v.png') repeat-y center top;
-	cursor: w-resize;/*url(./image/cur_move_v.cur), move*/
+	cursor: w-resize;
 }
 
 .ref_dot_h {
 	width: 100%;
 	height: 3px;
 	background: url('./imgs/line_dot.png') repeat-x left 1px;
-	cursor:  n-resize;/*url(./image/cur_move_h.cur), move*/
+	cursor:  n-resize;
 	top: -10px;
 }
 
@@ -435,7 +436,7 @@ export default {
 	height: 100%;
 	_height: 9999px;
 	background: url('./imgs/line_dot.png') repeat-y 1px top;
-	cursor: w-resize;/*url(./image/cur_move_v.cur), move*/
+	cursor: w-resize;
 	left: -10px;
 }
 #content {

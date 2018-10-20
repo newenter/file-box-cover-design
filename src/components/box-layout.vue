@@ -285,6 +285,6 @@ export default {
 .vue-box-layout {
 	position: relative;
 	transition: height 200ms ease;
-	background-image: url('./imgs/box-bg.png');
+	background: url('./imgs/box-bg.png');
 }
 </style>

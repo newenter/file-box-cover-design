@@ -22,7 +22,7 @@
 			行高: <input type="number" v-model="rowHeight"/> 列数: <input type="number" v-model="colNum"/>
 		</div>
 		<ruler-tool
-			:is-scale-revise="true"
+			:is-scale-revise="false"
 			:preset-line="presetLine">
 			<box-layout
 				:layout="layout"
